@@ -154,8 +154,8 @@ export default function CakeCandleStep({ wishData, onNext, onBack }) {
               </h3>
               <p className="text-xs text-slate-300 pt-1 leading-relaxed font-light">
                 {isAnniversary
-                  ? `Happy ${getOrdinal(milestoneCount)} Anniversary to <span className="font-semibold text-pink-300">${wishData.recipient}</span>! May your bond grow stronger with every passing year!`
-                  : `Happy ${getOrdinal(milestoneCount)} Birthday, <span className="font-semibold text-pink-300">${wishData.recipient}</span>! May this new chapter bring endless joy and adventure!`}
+                  ? <>Happy {getOrdinal(milestoneCount)} Anniversary to <span className="font-semibold text-pink-300">{wishData.recipient}</span>! May your bond grow stronger with every passing year!</>
+                  : <>Happy {getOrdinal(milestoneCount)} Birthday, <span className="font-semibold text-pink-300">{wishData.recipient}</span>! May this new chapter bring endless joy and adventure!</>}
               </p>
             </div>
 
